@@ -250,17 +250,30 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .logo-container {
-    flex-direction: column;
+header {
+    padding: 8px 10px;
   }
 
   .logo-container img {
-    width: 80px;
+    width: 55px; /* smaller logo */
   }
-  
+
+  .logo-container h1 {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
   nav {
-    flex-direction: column;
+    gap: 10px;
+    margin-top: 8px;
   }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+  }
+}
   
   .hero {
     padding: 60px 30px;
@@ -270,3 +283,4 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
