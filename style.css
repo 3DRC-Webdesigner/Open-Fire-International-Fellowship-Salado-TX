@@ -429,10 +429,6 @@ iframe {
   iframe {
     height: 250px;
   }
-	/* =========================
-   EVENTS SECTION
-========================= */
-
 #events {
   padding: 60px 20px;
   background-color: #f8f8f8;
@@ -535,6 +531,7 @@ iframe {
   }
 }
 }
+
 
 
 
