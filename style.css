@@ -158,7 +158,6 @@ nav a:hover {
   border: 2px solid #b71c1c;
 }
 
-
 /* Sections */
 section {
   padding: 60px 20px;
@@ -531,6 +530,76 @@ iframe {
   }
 }
 }
+/* SECTION STYLING */
+.events-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* GRID SYSTEM */
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* CARD STYLING */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card h3 {
+  margin: 15px 10px 5px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0 10px 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 900px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
 
 
 
