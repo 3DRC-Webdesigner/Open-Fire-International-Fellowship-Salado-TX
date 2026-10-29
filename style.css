@@ -600,6 +600,196 @@ iframe {
   }
 }
 
+/* Open Fire Declaration: home-page introduction and dedicated page */
+.declaration-preview {
+  background: #17110e;
+  color: #f8f2e9;
+  padding: 75px 25px;
+  border: 1px solid rgba(242, 171, 67, .4);
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.declaration-preview h2 {
+  color: #f3ae48;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.15;
+  max-width: 750px;
+  margin: 14px auto 20px;
+}
+
+.declaration-preview > p:not(.declaration-eyebrow) {
+  max-width: 740px;
+  margin: 0 auto 28px;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.declaration-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-size: .75rem;
+  color: #f3ae48;
+  font-weight: 700;
+}
+
+.declaration-preview .declaration-link {
+  background: #f3ae48;
+  color: #20150d;
+}
+
+.declaration-preview .declaration-link:hover,
+.declaration-preview .declaration-link:focus-visible {
+  background: #ffca74;
+}
+
+.declaration-page {
+  background: #120e0b;
+  color: #f8f2e9;
+}
+
+.declaration-page .declaration-header {
+  background: #21150f;
+  border-bottom: 1px solid rgba(243, 174, 72, .35);
+  padding: 16px clamp(20px, 5vw, 70px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.declaration-brand {
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.declaration-brand span {
+  display: block;
+  color: #f3ae48;
+  font-size: .8rem;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.declaration-page nav { gap: 6px 14px; }
+.declaration-page nav a { font-size: .95rem; }
+.declaration-page nav a:hover,
+.declaration-page nav a:focus-visible { color: #21150f; background: #f3ae48; }
+
+.declaration-page .declaration-intro {
+  max-width: none;
+  padding: clamp(80px, 12vw, 150px) 20px 90px;
+  border-radius: 0;
+  background: radial-gradient(ellipse at 50% 0%, #3c2317 0, #120e0b 65%);
+}
+
+.declaration-intro h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(3.2rem, 8vw, 6.8rem);
+  line-height: 1.08;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.declaration-intro h1 span { color: #f3ae48; }
+.declaration-intro > p:not(.declaration-eyebrow) {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  color: #e9ded3;
+}
+
+.declaration-scroll-link {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 20px;
+  border: 1px solid #f3ae48;
+  border-radius: 30px;
+  color: #f3ae48;
+  font-weight: 700;
+}
+
+.declaration-scroll-link:hover,
+.declaration-scroll-link:focus-visible { background: #f3ae48; color: #1c130d; }
+
+.declaration-page .declaration-slides {
+  background: #120e0b;
+  border-radius: 0;
+  max-width: 1180px;
+  padding: 24px 20px 60px;
+  scroll-margin-top: 95px;
+  box-sizing: content-box;
+}
+
+.declaration-slide {
+  margin: 0 0 68px;
+  background: #19120f;
+  border: 1px solid rgba(243, 174, 72, .23);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, .25);
+}
+
+.declaration-slide-heading {
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  color: #f3ae48;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.declaration-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #120e0b;
+}
+
+.declaration-transcript {
+  margin: 0;
+  padding: 15px clamp(16px, 3vw, 32px) 20px;
+  border-top: 1px solid rgba(243, 174, 72, .2);
+  color: #f7ede4;
+}
+
+.declaration-transcript summary {
+  color: #f3ae48;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.declaration-transcript p { max-width: 880px; font-size: 1.05rem; }
+.declaration-transcript strong { color: #f3ae48; }
+
+.declaration-return {
+  text-align: center;
+  padding: 0 20px 85px;
+  color: #f3ae48;
+  font-weight: 700;
+}
+
+.declaration-return a:hover,
+.declaration-return a:focus-visible { text-decoration: underline; }
+
+@media (max-width: 650px) {
+  .declaration-page .declaration-header { justify-content: center; text-align: center; }
+  .declaration-brand span { text-align: center; }
+  .declaration-page .declaration-intro { padding-top: 70px; padding-bottom: 50px; }
+  .declaration-page .declaration-slides { padding: 20px 12px 35px; }
+  .declaration-slide { margin-bottom: 28px; border-radius: 8px; }
+  .declaration-slide-heading { padding: 12px 15px; font-size: .7rem; }
+  .declaration-transcript { padding: 14px 18px 18px; }
+}
+
 
 
 
